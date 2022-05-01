@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resturantMenu</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,500;1,600&family=Ubuntu:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<!-- css style  -->
+<link rel="stylesheet" href="style/style.css">
+<link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+<ul class="unorderedList">
+    <li class="navBarItem"><a href="#">Home</a></li>
+    <li class="navBarItem"><a href="#">Our Menu</a></li>
+    <li class="navBarItem"><a href="#">About</a></li>
+    <li class="navBarItem"><a href="#">Contact</a></li>
+</ul>  
+    </div>
+
+    <div class="small-container cart-page margin">
+        <table>
+            <tr>
+                <th>Food</th>
+                <th>Quantity</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/momo.jpg" alt="">
+                        <div>
+                            <p>Momo</p>
+                            <small>Price: Rs150</small>
+                        </div>
+
+                    </div>
+                </td>
+                <td><input type="number" value="1" id="noOfMomo"></td>
+                <td><button type="submit" class="momoButton orderButton" id="momoButton">Order Now</button></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/chowmin.jpg" alt="">
+                        <div>
+                            <p>Chowmin</p>
+                            <small>Price: Rs100</small>
+                        </div>
+
+                    </div>
+                </td>
+                <td><input type="number" value="1" id="noOfChowmin"></td>
+                <td><button type="submit" class="chowminButton orderButton" id="chowminButton">Order Now</button></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/burger.jpg" alt="">
+                        <div>
+                            <p>Burger</p>
+                            <small>Price: Rs300</small>
+                        </div>
+
+                    </div>
+                </td>
+                <td><input type="number" value="1" id="noOfBurger"></td>
+                <td><button type="submit" class="burgerButton orderButton" id="burgerButton">Order Now</button></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/pizza.webp" alt="">
+                        <div>
+                            <p>pizza</p>
+                            <small>Price: Rs400</small>
+                        </div>
+
+                    </div>
+                </td>
+                <td><input type="number" value="1" id="noOfPizza"></td>
+                <td><button type="submit" class="pizzaButton orderButton" id="pizzaButton">Order Now</button></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <button id="calculateButton" class="button">Calculate</button>
+
+    <div class="totalPrice margin">
+              <h4 class="historyTitle history">Your Purchase with us</h4>
+        <div class="list" id="historyForUl">
+      
+            <ul >
+             <li>Momo : 0</li>
+            <li>Chowmin: 0</li>
+            <li>Burger : 0</li>
+            <li>Pizza: 0</li>
+        </ul>
+        </div>
+     
+        <table id="insertBill">
+            <thead>
+
+                <tr>
+                    <th>Food</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Sub-total</th>
+                </tr>
+            </thead>
+            <tbody id="bill-body">
+
+            </tbody>
+            <!-- <tr id="insertBill"></tr> -->
+        </table>
+
+    </div>
+    <button id="payButton" class="button">Pay Bill</button>
+    <script src="js/script.js"></script>
+</body>
+</html>
